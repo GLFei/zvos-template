@@ -1,0 +1,71 @@
+@import "../../static/less/theme.less";
+
+.page-usercenter{
+
+
+  .auth-form-wrapper{
+    .step-index-wrapper{
+      .el-step__icon{
+        outline:solid 12px #fff;
+      }
+
+      .is-process{
+        .el-step__icon{
+          color:#fff;
+          background-color:@zvBlue;
+          border-color:@zvBlue;
+        }
+      }
+    }/*step-index-wrapper*/
+
+    .step-start-wrapper{
+       padding:30px;
+
+      label{
+        display: block;
+        margin-bottom:15px;
+        height: 36px;
+        font-size: 14px;
+        line-height: 36px;
+        color: #333;
+      }
+
+      .step-start{
+        padding:15px;
+
+        border:solid 1px @zvBlue;
+        background-color:@zvBlueTransparent;
+
+        h5{
+          line-height: 36px;
+          height:36px;
+          font-size:16px;
+          font-weight:bold;
+          color:@zvGrey;
+          em{
+            margin-left:15px;
+            font-size:14px;
+            font-weight:normal;
+            color:@zvGrey;
+          }
+        }
+      }
+    }/*step-start-wrapper*/
+
+    .zv-form-auth{
+      width:500px;
+      padding-top:20px;
+      margin:0 auto;
+
+      .zv-btn-lg{
+        width:180px;
+        margin-top:10px;
+      }
+    }
+
+    .auth-form-notice{
+      margin:20px 0;
+    }
+
+  }
+}

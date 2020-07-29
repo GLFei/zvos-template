@@ -1,0 +1,97 @@
+{
+    "name": "my-app",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build:dev": "vue-cli-service build --mode development",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "dev": "node devbuild.js"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "clipboard": "^2.0.4",
+        "css-loader": "^2.0.2",
+        "date-format": "^2.0.0",
+        "echarts": "^4.2.1",
+        "el-tree-transfer": "^2.2.0",
+        "element-ui": "^2.9.2",
+        "js-base64": "^2.4.9",
+        "js-md5": "^0.7.3",
+        "jsencrypt": "^3.0.0-rc.1",
+        "lodash": "^4.17.11",
+        "mockjs": "^1.0.1-beta3",
+        "moment": "^2.24.0",
+        "normalize.css": "^8.0.0",
+        "nprogress": "^0.2.0",
+        "qs": "^6.6.0",
+        "sortablejs": "^1.10.2",
+        "style-loader": "^0.23.1",
+        "vant": "^2.5.8",
+        "vue": "^2.5.17",
+        "vue-amap": "^0.5.9",
+        "vue-count-to": "^1.0.13",
+        "vue-cropper": "^0.3.6",
+        "vue-i18n": "^8.0.0",
+        "vue-router": "^3.0.1",
+        "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+        "@kazupon/vue-i18n-loader": "^0.3.0",
+        "@vue/cli-plugin-babel": "^3.0.0-beta.15",
+        "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
+        "@vue/cli-service": "^3.8.4",
+        "babel-eslint": "^10.0.1",
+        "babel-plugin-transform-remove-console": "^6.9.4",
+        "chalk": "^4.0.0",
+        "copy-webpack-plugin": "^5.1.1",
+        "cross-spawn": "^7.0.2",
+        "eslint": "^5.8.0",
+        "eslint-plugin-vue": "^5.0.0-0",
+        "fs-extra": "^9.0.0",
+        "js-cookie": "^2.2.0",
+        "less": "^3.0.4",
+        "less-loader": "^4.1.0",
+        "node-sass": "^4.12.0",
+        "sass-loader": "^7.1.0",
+        "ssh2-sftp-client": "^5.1.2",
+        "svg-sprite-loader": "^3.9.2",
+        "vue-cli-plugin-element-ui": "^1.1.4",
+        "vue-template-compiler": "^2.5.17"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "rules": {
+            "no-console": "off",
+            "indent": "off",
+            "no-return-await": "off",
+            "object-curly-spacing": "off",
+            "object-property-newline": "off",
+            "global-require": 0
+        },
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "globals": {
+            "AMap": "AMap"
+        }
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ]
+}

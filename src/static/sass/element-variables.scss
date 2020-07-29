@@ -1,0 +1,90 @@
+/* 改变主题色变量 */
+$--color-primary: #3ae2c4;
+$--color-success: #3ae2c4 !default
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+.el-table {
+  color: #333;
+   thead {
+    color: #999;
+  }
+
+  th {
+    // background: $table-header-gray;
+    background: #f6f6f6;
+    font-weight: normal;
+  }
+
+  th.is-leaf,
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover>td {
+  background-color: #f5f7fa;
+}
+
+.el-table__fixed-right::before, .el-table__fixed::before {
+  // display: none;
+  content: none;
+}
+
+.el-table__fixed, .el-table__fixed-right {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.el-table--group::after, .el-table--border::after, .el-table::before {
+  background-color: #ddd;
+}
+
+.el-table__body tr.hover-row > td, .el-table__body tr.hover-row.current-row > td, .el-table__body tr.hover-row.el-table__row--striped > td, .el-table__body tr.hover-row.el-table__row--striped.current-row > td {
+  background-color: rgba(58, 226, 196, 0.1);
+}
+
+.el-date-editor .el-range-separator {
+  margin: 0 5px;
+  color: #a7a8aa;
+  background: #fef8f8;
+  width: auto;
+}
+.el-dialog .el-date-editor .el-range-separator {
+  margin: 0 -1px;
+}
+
+.el-message-box__btns {
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  .el-button {
+    padding: 8px 22px;
+  }
+}
+
+.el-message-box__content {
+  margin-top: -15px;
+  padding: 15px
+}
+
+.el-tooltip__popper{
+  max-width: 400px !important;
+  line-height: 180%;
+}
+
+.el-pager li {
+  font-weight: normal;
+  &.active {
+    font-weight: bold;
+  }
+}
+
+.el-form-item__label {
+  color: #8b8b8b;
+}
+
+.el-input .el-input__inner {
+  cursor: text;
+}

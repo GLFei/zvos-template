@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2011689",
+      "name": "失败",
+      "font_class": "shibai",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "5028940",
+      "name": "勾",
+      "font_class": "complete",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "7117876",
+      "name": "问号",
+      "font_class": "shuoming",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "8667273",
+      "name": "加载",
+      "font_class": "jiazai",
+      "unicode": "e817",
+      "unicode_decimal": 59415
+    }
+  ]
+}

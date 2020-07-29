@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-store, must-revalidate">
+    <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+    <link rel="icon" href="<%= BASE_URL %>zmlogo.png">
+    <title>中联重科物联网平台</title>
+    <script src="/config/index.js?t=<%= htmlWebpackPlugin.options.timestamp %>"></script>
+    <script src="/static/js/amap.js"></script>
+    <script src="/static/js/amap.ui.js"></script>
+</head>
+
+<body>
+    <noscript>
+      <strong>We're sorry but my-app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>
+<script>
+    /* 检测页面，移动端百分比布局  PC端设置最小宽度*/
+    (function() {
+        let u = window.navigator.userAgent;
+        let m = /mobi/i.test(window.navigator.userAgent.toLowerCase()) ? "mobile" : "PC"
+        if (m === 'mobile') {
+            var head = document.getElementsByTagName('head')[0];
+            var link = document.createElement('link');
+            var style = document.createElement('style');
+            style.innerText = 'html,body,#app, .el-container, .el-main{width: 100% !important;height: 100% !important;overflow: hidden;}html{min-width:100%!important;}::-webkit-scrollbar{width: 0;height:0;}@media(min-width:320px){html{font-size:21px;}}@media(min-width:360px){html{font-size:24px;}}@media(min-width:375px){html{font-size:25px;}}@media(min-width:384px){html{font-size:26px;}}@media(min-width:400px){html{font-size:27px;}}@media(min-width:414px){html{font-size:28px;}}@media(min-width:424px){html{font-size:28px;}}@media(min-width:480px){html{font-size:32px;}}@media(min-width:540px){html{font-size:36px;}}@media(min-width:720px){html{font-size:48px;}}@media(min-width:750px){html{font-size:50px;}}';
+            head.appendChild(style);
+        } else {
+            var body = document.getElementsByTagName('body')[0];
+            body.style['min-width'] = '1180px';
+        }
+    })()
+</script>

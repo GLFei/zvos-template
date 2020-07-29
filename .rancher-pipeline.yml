@@ -1,0 +1,30 @@
+stages:
+- name: node
+  steps:
+  - runScriptConfig:
+      image: imageUrl
+      shellScript: npm ci && npm run build
+  - runScriptConfig:
+      image: java:8
+      shellScript: |-
+        wget wgetUrl
+        wget -i file.list
+- name: 打包
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: zvos/zvos-am-app:${CICD_GIT_COMMIT}
+      pushRemote: true
+      registry: registryUrl
+    env:
+      PLUGIN_DEBUG: "true"
+      PLUGIN_INSECURE: "true"
+- name: 部署
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
+    when:
+      branch: {}
+timeout: 60
+notification: {}
